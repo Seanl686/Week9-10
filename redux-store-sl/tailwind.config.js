@@ -21,7 +21,7 @@ export default {
         'spin-slow': 'spin 20s linear infinite',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Ubuntu', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
         mono: ['monospace'],
       },
       fontSize: {
