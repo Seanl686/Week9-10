@@ -1,6 +1,6 @@
 # Redux Counter Application
 
-A modern React application demonstrating state management using Redux Toolkit. This project showcases a simple counter functionality with synchronous and asynchronous state updates.
+A modern React application demonstrating state management using Redux Toolkit. This application now uses Tailwind CSS for more efficient styling.
 
 ## Project Overview
 
@@ -14,7 +14,7 @@ This application is a counter that allows users to:
 - **React 19**: For building the user interface
 - **Redux Toolkit**: For state management
 - **Vite**: For fast development and building
-- **CSS Modules**: For component-scoped styling
+- **Tailwind CSS**: Replaced CSS Modules for utility-first styling
 
 ## Why Redux Toolkit?
 
@@ -33,19 +33,26 @@ Redux Toolkit simplifies Redux development in several key ways:
 ## Project Structure
 
 ```
-src/
-├── app/
-│   └── store.js           # Redux store configuration
-├── features/
-│   └── counter/           # Counter feature
-│       ├── Counter.jsx    # Counter component
-│       ├── Counter.module.css # Scoped styles
-│       └── counterSlice.js # Redux slice for counter
-├── assets/                # Static assets
-├── App.jsx                # Main application component
-├── App.css                # Application styles
-├── index.css              # Global styles
-└── main.jsx               # Application entry point
+.
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── vite.config.js
+├── eslint.config.js
+├── src/
+│   ├── assets/
+│   │   └── react.svg
+│   ├── app/
+│   │   └── store.js
+│   ├── features/
+│   │   └── counter/
+│   │       ├── Counter.jsx
+│   │       └── counterSlice.js
+│   ├── index.css
+│   ├── App.css
+│   ├── App.jsx
+│   └── main.jsx
 ```
 
 ## How It Works
