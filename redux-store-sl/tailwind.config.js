@@ -15,7 +15,11 @@ export default {
       },
       animation: {
         'spin-slow': 'spin 20s linear infinite',
-      }
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['monospace'],
+      },
     },
   },
   plugins: [],

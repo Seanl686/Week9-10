@@ -1,28 +1,27 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Counter } from './features/counter/Counter'
-import './App.css'
 
 function App() {
   return (
-    <>
-      <div className="logoContainer">
+    <div className="max-w-5xl mx-auto p-8 text-center">
+      <div className="flex justify-center items-center">
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src={viteLogo} className="h-24 p-6 transition-all hover:drop-shadow-[0_0_2em_#646cffaa]" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src={reactLogo} className="h-24 p-6 transition-all hover:drop-shadow-[0_0_2em_#61dafbaa] animate-spin-slow" alt="React logo" />
         </a>
       </div>
       
-      <h1>Redux Counter</h1>
-      <div className="card">
-      <Counter />
+      <h1 className="text-5xl font-bold my-4">Redux Counter</h1>
+      <div className="p-8">
+        <Counter />
       </div>
-      <p className="read-the-docs">
+      <p className="text-gray-400">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+    </div>
   )
 }
 
