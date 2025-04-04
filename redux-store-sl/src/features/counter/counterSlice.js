@@ -26,4 +26,15 @@ export const counterSlice = createSlice({
 // Action creators are generated for each case reducer function
 export const { increment, decrement, incrementByAmount } = counterSlice.actions
 
+// The function below is called a thunk and allows us to perform async logic
+// It can be dispatched like a regular action: `dispatch(incrementAsync(10))`
+export const incrementAsync = (amount) => (dispatch) => {
+  setTimeout(() => {
+    dispatch(incrementByAmount(amount))
+  }, 1000)
+}
+
+// Selector to get the count value from state
+export const selectCount = (state) => state.counter.value
+
 export default counterSlice.reducer
