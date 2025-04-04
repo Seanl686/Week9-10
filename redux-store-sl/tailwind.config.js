@@ -41,6 +41,15 @@ export default {
       textColor: {
         'app': 'rgba(255, 255, 255, 0.87)',
       },
+      backgroundImage: {
+        'app-gradient': 'linear-gradient(to top, #ffffff 0%, #242424 70%, #242424 100%, #ffffff 100%)',
+      },
+      minWidth: {
+        'app': '200px',
+      },
+      maxWidth: {
+        'app': '100%',
+      },
     },
   },
   plugins: [],

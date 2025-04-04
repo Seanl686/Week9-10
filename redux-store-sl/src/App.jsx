@@ -4,7 +4,7 @@ import { Counter } from './features/counter/Counter'
 
 function App() {
   return (
-    <div className="max-w-5xl mx-auto p-8 text-center bg-app text-app font-sans min-h-screen">
+    <div className="min-w-app max-w-app mx-auto p-8 text-center bg-app-gradient text-app font-sans min-h-screen">
       <div className="flex justify-center items-center">
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="h-24 p-6 transition-all hover:drop-shadow-[0_0_2em_#646cffaa]" alt="Vite logo" />
@@ -19,8 +19,8 @@ function App() {
       <div className="p-8">
         <Counter />
       </div>
-      <p className="text-gray-400">
-        <a href="#" className="text-link hover:text-link-hover font-medium">
+      <p className="text-gray-400 text-sm ">
+        <a href="#" className="text-white hover:text-blue-400 hover:underline font-medium">
           Click on the Vite and React logos to learn more
         </a>
       </p>
