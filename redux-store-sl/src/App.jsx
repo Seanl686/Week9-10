@@ -15,9 +15,9 @@ function App() {
         </a>
       </div>
       
-      <h1>Redux Toolkit Counter Example</h1>
+      <h1>Redux Counter</h1>
       <div className="card">
-        <Counter />
+      <Counter />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
