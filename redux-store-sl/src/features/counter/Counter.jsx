@@ -17,15 +17,15 @@ export function Counter() {
     <div>
       <div className="flex items-center justify-center">
         <button
-          className="appearance-none relative bg-[#00008b] text-lg font-bold px-3 py-1 outline-none border-4 border-white rounded transition-all ml-2 overflow-hidden"
+          className="appearance-none bg-cyan-500/10 text-3xl font-sans font-black px-3 py-1 outline-none border-2 border-transparent hover:border-purple-400/40 text-white rounded transition-all duration-150"
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
         >
           +
         </button>
-        <span className="text-6xl font-mono font-bold px-4 py-2">{count}</span>
+        <span className="text-[78px] font-mono font-black px-4 mt-0.5">{count}</span>
         <button
-          className="appearance-none relative bg-[#00008b] text-lg font-bold px-3 py-1 outline-none border-4 border-white rounded transition-all ml-2 overflow-hidden"
+          className="appearance-none bg-cyan-500/10 text-3xl font-sans font-black px-3 py-1 outline-none border-2 border-transparent hover:border-purple-400/40 text-white rounded transition-all duration-150"
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
         >
@@ -34,21 +34,19 @@ export function Counter() {
       </div>
       <div className="flex items-center justify-center mt-4">
         <input
-          className="bg-white/10 text-lg font-mono px-2 py-1 outline-none border-2 border-primary-light/50 rounded text-white w-20 text-center"
+          className="bg-white text-black text-3xl font-black p-0.5 w-20 text-center mr-1"
           aria-label="Set increment amount"
           value={incrementAmount}
           onChange={e => setIncrementAmount(e.target.value)}
         />
         <button
-          className="appearance-none relative bg-[#00008b] text-lg font-bold px-3 py-1 outline-none border-4 border-white rounded transition-all ml-2 overflow-hidden"
-          onClick={() =>
-            dispatch(incrementByAmount(Number(incrementAmount) || 0))
-          }
+          className="appearance-none bg-cyan-500/10 text-3xl font-sans font-black px-3 py-1 outline-none border-2 border-transparent hover:border-purple-400/40 text-white rounded transition-all duration-150"
+          onClick={() => dispatch(incrementByAmount(Number(incrementAmount) || 0))}
         >
           Add Amount
         </button>
         <button
-          className="appearance-none relative bg-[#00008b] text-lg font-bold px-3 py-1 outline-none border-4 border-white rounded transition-all ml-2 overflow-hidden"
+          className="appearance-none bg-cyan-500/10 text-3xl font-sans font-black px-3 py-1 outline-none border-2 border-transparent hover:border-purple-400/40 text-white rounded transition-all duration-150 relative ml-1 overflow-hidden"
           onClick={() => dispatch(incrementAsync(Number(incrementAmount) || 0))}
         >
           Add Async

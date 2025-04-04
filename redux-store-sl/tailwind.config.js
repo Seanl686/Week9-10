@@ -22,12 +22,17 @@ export default {
       },
       fontFamily: {
         sans: ['Ubuntu', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
+        garamond: ['EB Garamond', 'Garamond', 'serif'],
         mono: ['monospace'],
       },
       fontSize: {
-        'heading': ['3.2em', {
+        'heading': ['4.2em', {
           lineHeight: '1.1',
           fontWeight: '600',
+        }],
+        'subheading': ['3em', {
+          lineHeight: '1.2',
+          fontWeight: '500',
         }],
       },
       backgroundColor: {

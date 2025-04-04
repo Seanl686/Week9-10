@@ -13,8 +13,9 @@ function App() {
           <img src={reactLogo} className="h-24 p-6 transition-all hover:drop-shadow-[0_0_2em_#61dafbaa] animate-spin-slow" alt="React logo" />
         </a>
       </div>
-      
-      <h1 className="text-heading my-4">Redux Counter</h1>
+
+      <h1 className="text-heading font-garamond my-4">Redux Counter</h1>
+
       <div className="p-8">
         <Counter />
       </div>
